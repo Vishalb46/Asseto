@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from Worksbot-admin.themesease.com/dashboard-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 14:45:45 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Worksbot Admin - Responsive Web Application Kit</title>
+
+        <!-- ========== COMMON STYLES ========== -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" >
+        <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" >
+        <link rel="stylesheet" href="css/animate-css/animate.min.css" media="screen" >
+        <link rel="stylesheet" href="css/lobipanel/lobipanel.min.css" media="screen" >
+
+        <!-- ========== PAGE STYLES ========== -->
+        <link rel="stylesheet" href="css/prism/prism.css" media="screen" > <!-- USED FOR DEMO HELP - YOU CAN REMOVE IT -->
+        <link rel="stylesheet" href="css/icheck/skins/line/blue.css" >
+        <link rel="stylesheet" href="css/icheck/skins/line/red.css" >
+        <link rel="stylesheet" href="css/icheck/skins/line/green.css" >
+
+        <!-- ========== THEME CSS ========== -->
+        <link rel="stylesheet" href="css/main.css" media="screen" >
+
+        <!-- ========== MODERNIZR ========== -->
+        <script src="js/modernizr/modernizr.min.js"></script>
+    </head>
+    <body class="top-navbar-fixed">
+        <div class="main-wrapper">
+
+            <!-- ========== TOP NAVBAR ========== -->
+            <nav class="navbar top-navbar bg-white box-shadow">
+            	<div class="container-fluid">
+                    <div class="row">
+                        <div class="navbar-header no-padding">
+                			<a class="navbar-brand" href="index.html">
+                			    <img src="images/del" alt="Worksbot - Admin Template" class="logo">
+                			</a>
+                            <span class="small-nav-handle hidden-sm hidden-xs"><i class="fa fa-outdent"></i></span>
+                			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                				<span class="sr-only">Toggle navigation</span>
+                				<i class="fa fa-ellipsis-v"></i>
+                			</button>
+                            <button type="button" class="navbar-toggle mobile-nav-toggle" >
+                				<i class="fa fa-bars"></i>
+                			</button>
+                		</div>
+                        <!-- /.navbar-header -->
+
+                		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+                			<ul class="nav navbar-nav" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                <li class="hidden-sm hidden-xs"><a href="#" class="user-info-handle"><i class="fa fa-user"></i></a></li>
+                                <li class="hidden-sm hidden-xs"><a href="#" class="full-screen-handle"><i class="fa fa-arrows-alt"></i></a></li>
+                                <li class="hidden-sm hidden-xs"><a href="#"><i class="fa fa-search"></i></a></li>
+                				<li class="hidden-xs hidden-xs"><!-- <a href="#">My Tasks</a> --></li>
+                			</ul>
+                            <!-- /.nav navbar-nav -->
+
+                			<ul class="nav navbar-nav navbar-right" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                <li class="dropdown">
+                					<a href="#" class="dropdown-toggle bg-primary" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus-circle"></i> Add New <span class="caret"></span></a>
+                					<ul class="dropdown-menu" >
+                						<li><a href="#"><i class="fa fa-plus-square-o"></i> Customer</a></li>
+                                        <li><a href="#"><i class="fa fa-plus-square-o"></i> Employee</a></li>
+                						<li><a href="#"><i class="fa fa-plus-square-o"></i> Estimate</a></li>
+                                        <li><a href="#"><i class="fa fa-plus-square-o"></i> Task</a></li>
+                						<li><a href="#"><i class="fa fa-plus-square-o"></i> Team Member</a></li>
+                						<li role="separator" class="divider"></li>
+                						<li><a href="#">Create Order</a></li>
+                						<li role="separator" class="divider"></li>
+                						<li><a href="#">Generate Report</a></li>
+                					</ul>
+                				</li>
+                                <!-- /.dropdown -->
+                                <li><a href="#" class=""><i class="fa fa-bell"></i></a></li>
+                				<li><a href="#" class=""><i class="fa fa-comments"></i></a></li>
+                				<li class="dropdown">
+                					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">John Doe <span class="caret"></span></a>
+                					<ul class="dropdown-menu profile-dropdown">
+                						<li class="profile-menu bg-gray">
+                						    <div class="">
+                						        <img src="http://placehold.it/60/c2c2c2?text=User" alt="John Doe" class="img-circle profile-img">
+                                                <div class="profile-name">
+                                                    <h6>John Doe</h6>
+                                                    <a href="#">View Profile</a>
+                                                </div>
+                                                <div class="clearfix"></div>
+                						    </div>
+                						</li>
+                						<li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+                						<li><a href="#"><i class="fa fa-sliders"></i> Account Details</a></li>
+                						<li role="separator" class="divider"></li>
+                						<li><a href="#" class="color-danger text-center"><i class="fa fa-sign-out"></i> Logout</a></li>
+                					</ul>
+                				</li>
+                                <!-- /.dropdown -->
+                                <li><a href="#" class="hidden-xs hidden-sm open-right-sidebar"><i class="fa fa-ellipsis-v"></i></a></li>
+                			</ul>
+                            <!-- /.nav navbar-nav navbar-right -->
+                		</div>
+                		<!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.row -->
+            	</div>
+            	<!-- /.container-fluid -->
+            </nav>
+
+            <!-- ========== WRAPPER FOR BOTH SIDEBARS & MAIN CONTENT ========== -->
+            <div class="content-wrapper">
+                <div class="content-container">
+
+<div class="left-sidebar bg-black-300 box-shadow">
+                        <div class="sidebar-content">
+                            <div class="user-info closed">
+                                <img src="http://placehold.it/90/c2c2c2?text=User" alt="John Doe" class="img-circle profile-img">
+                                <h6 class="title">John Doe</h6>
+                                <small class="info">PHP Developer</small>
+                            </div>
+                            <!-- /.user-info -->
+
+                            <div class="sidebar-nav">
+                                <ul class="side-nav color-gray">
+                                    <li class="nav-header">
+                                        <span class="">Main Category</span>
+                                    </li>
+                                    <li>
+                                        <a href="admindashboard.html"><i class="fa fa-home"></i>DASHBOARD</a>
+                                       
+                                    </li>
+                                    <li>
+                                        <a href="adproject.html"><i class="fa fa-bars"></i>PROJECT</a>
+                                        
+                                    </li>
+									 <li>
+                                        <a href="adtask.html"><i class="fa fa-file-text"></i>TASK</a>
+                                        
+                                    </li>
+									 <li>
+                                        <a href="adsupport.html"><i class="fa fa-ticket"></i>SUPPORT</a>
+                                        
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="#"><i class="fa fa-bank"></i> <span>ASSET</span> <i class="fa fa-angle-right arrow"></i></a>
+                                        <ul class="child-nav">
+                                            <li><a href="assetview.html"><i class="fa fa-bank"></i> <span>Assets</span></a></li>
+                                            <li><a href="adallocation.html"><i class="fa fa-pencil-square-o"></i> <span>Allocation</span></a></li>
+                                            <li><a href="adrevoke.html"><i class="fa fa-pencil"></i> <span>Revoke</span></a></li>
+                                            <li><a href="addepreciation.html"><i class="fa fa-legal"></i> <span>Depreciation</span></a></li>
+											<li><a href="adassetsetting.html"><i class="fa fa-gears"></i> <span>Setting</span></a></li>
+                                        </ul>
+                                    </li>
+									<li>
+                                        <a href="adlead.html"><i class="fa fa-tty"></i>LEADS</a>
+                                        
+                                    </li>
+									<li class="has-children">
+                                        <a href="#"><i class="fa fa-gears"></i> <span>UTILITIES</span> <i class="fa fa-angle-right arrow"></i></a>
+                                        <ul class="child-nav">
+                                            <li><a href="#"><i class="fa fa-bank"></i> <span></span></a></li>
+                                            <li><a href="#"><i class="fa fa-bell"></i> <span></span></a></li>
+                                           
+                                        </ul>
+                                    </li>
+                                    
+                                    
+                                    
+                                </ul>
+                                <!-- /.side-nav -->
+                                
+                            </div>
+                            <!-- /.sidebar-nav -->
+                        </div>
+                        <!-- /.sidebar-content -->
+                    </div>
+                    <!-- /.left-sidebar -->
+                      
+                    <div class="main-page">
+                        <div class="container-fluid">
+                            <div class="row page-title-div">
+                                <div class="col-md-6">
+								<a href="adnewticket.html"><button type="button" class="btn btn-primary ladda-button" data-style="expand-right"><span class="ladda-label">New Ticket</span></button></a>
+                                    <h4 class="title">Ticket Summary<small class="ml-10"></small></h4>
+                                    <p class="sub-title"></p>
+                                </div>
+                                <!-- /.col-md-6 -->
+                                
+                                <!-- /.col-md-6 text-right -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row breadcrumb-div">
+                                <div class="col-md-6">
+                                    <ul class="breadcrumb">
+            							<li><a href="admindashboard.html"><i class="fa fa-home"></i></a></li>
+            							<li class="active"></li>
+            						</ul>
+                                </div>
+                                <!-- /.col-md-6 -->
+                                <div class="col-md-6 text-right">
+                                    <a href="#"><i class="fa fa-comments"></i> Talk to us</a>
+                                    <a href="#" class="pl-20"><i class="fa fa-cog"></i> Settings</a>
+                                </div>
+                                <!-- /.col-md-6 -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.container-fluid -->
+
+                  
+                                <!-- /.row -->
+								
+                        
+
+                       
+
+                                   <section class="section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                        <a class="dashboard-stat bg-primary" href="#">
+                                            <span class="number counter">0</span>
+                                            <span class="name">Not Started</span>
+                                            <span class="bg-icon"><i class="fa fa-comments"></i></span>
+                                        </a>
+                                        <!-- /.dashboard-stat -->
+
+                                        <div class="src-code">
+                                            <pre class="language-html"><code class="language-html">
+&lt;a class="dashboard-stat bg-primary" href="#"&gt;
+    &lt;span class="number counter"&gt;1,411&lt;/span&gt;
+    &lt;span class="name"&gt;Comments&lt;/span&gt;
+    &lt;span class="bg-icon"&gt;&lt;i class="fa fa-comments"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;!-- /.dashboard-stat --&gt;
+
+&lt;!-- ========== JS ========== --&gt;
+&lt;script&gt;
+    $(function(){
+        $('.counter').counterUp();
+    });
+&lt;/script&gt;
+                                            </code></pre>
+                                        </div>
+                                        <!-- /.src-code -->
+                                    </div>
+                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
+
+                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                        <a class="dashboard-stat bg-danger" href="#">
+                                            <span class="number counter">1</span>
+                                            <span class="name">In Progress</span>
+                                            <span class="bg-icon"><i class="fa fa-ticket"></i></span>
+                                        </a>
+                                        <!-- /.dashboard-stat -->
+
+                                        <div class="src-code">
+                                            <pre class="language-html"><code class="language-html">
+&lt;a class="dashboard-stat bg-danger" href="#"&gt;
+    &lt;span class="number counter"&gt;322&lt;/span&gt;
+    &lt;span class="name"&gt;Total Tickets&lt;/span&gt;
+    &lt;span class="bg-icon"&gt;&lt;i class="fa fa-ticket"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;!-- /.dashboard-stat --&gt;
+
+&lt;!-- ========== JS ========== --&gt;
+&lt;script&gt;
+    $(function(){
+        $('.counter').counterUp();
+    });
+&lt;/script&gt;
+                                            </code></pre>
+                                        </div>
+                                        <!-- /.src-code -->
+                                    </div>
+                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
+
+                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                        <a class="dashboard-stat bg-warning" href="#">
+                                            <span class="number counter">0</span>
+                                            <span class="name">Cancelled</span>
+                                            <span class="bg-icon"><i class="fa fa-bank"></i></span>
+                                        </a>
+                                        <!-- /.dashboard-stat -->
+
+                                        <div class="src-code">
+                                            <pre class="language-html"><code class="language-html">
+&lt;a class="dashboard-stat bg-warning" href="#"&gt;
+    &lt;span class="number counter"&gt;5,551&lt;/span&gt;
+    &lt;span class="name"&gt;Bank Credits&lt;/span&gt;
+    &lt;span class="bg-icon"&gt;&lt;i class="fa fa-bank"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;!-- /.dashboard-stat --&gt;
+                                            </code></pre>
+                                        </div>
+                                        <!-- /.src-code -->
+                                    </div>
+                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
+
+                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                        <a class="dashboard-stat bg-warning" href="#">
+                                            <span class="number counter">0</span>
+                                            <span class="name">On hold</span>
+                                            <span class="bg-icon"><i class="fa fa-bank"></i></span>
+                                        </a>
+                                        <!-- /.dashboard-stat -->
+
+                                        <div class="src-code">
+                                            <pre class="language-html"><code class="language-html">
+&lt;a class="dashboard-stat bg-warning" href="#"&gt;
+    &lt;span class="number counter"&gt;5,551&lt;/span&gt;
+    &lt;span class="name"&gt;Bank Credits&lt;/span&gt;
+    &lt;span class="bg-icon"&gt;&lt;i class="fa fa-bank"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;!-- /.dashboard-stat --&gt;
+
+&lt;!-- ========== JS ========== --&gt;
+&lt;script&gt;
+    $(function(){
+        $('.counter').counterUp();
+    });
+&lt;/script&gt;
+
+&lt;!-- ========== JS ========== --&gt;
+&lt;script&gt;
+    $(function(){
+        $('.counter').counterUp();
+    });
+&lt;/script&gt;
+                                            </code></pre>
+                                        </div>
+                                        <!-- /.src-code -->
+                                    </div>
+                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
+
+                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                        <a class="dashboard-stat bg-success" href="#">
+                                            <span class="number counter">11</span>
+                                            <span class="name">Finished</span>
+                                            <span class="bg-icon"><i class="fa fa-thumbs-o-up"></i></span>
+                                        </a>
+                                        <!-- /.dashboard-stat -->
+
+                                        <div class="src-code">
+                                            <pre class="language-html"><code class="language-html">
+&lt;a class="dashboard-stat bg-success" href="#"&gt;
+    &lt;span class="number counter"&gt;16,710&lt;/span&gt;
+    &lt;span class="name"&gt;Thumbs Up&lt;/span&gt;
+    &lt;span class="bg-icon"&gt;&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;!-- /.dashboard-stat --&gt;
+
+&lt;!-- ========== JS ========== --&gt;
+&lt;script&gt;
+    $(function(){
+        $('.counter').counterUp();
+    });
+&lt;/script&gt;
+                                            </code></pre>
+                                        </div>
+                                        <!-- /.src-code -->
+                                    </div>
+                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
+
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.container-fluid -->
+                        </section>
+                        <!-- /.section -->
+						
+                                                	
+                                                <div class="input-group">
+                                                			<div class="input-group-btn">
+                                                				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                                                				<ul class="dropdown-menu">
+                                                					<li><a href="#">Action</a></li>
+                                                					<li><a href="#">Another action</a></li>
+                                                					<li><a href="#">Something else here</a></li>
+                                                					<li role="separator" class="divider"></li>
+                                                					<li><a href="#">Separated link</a></li>
+                                                				</ul>
+                                                			</div>
+                                                	<div class="col-lg-4">
+                                                		<div class="input-group">
+                                                			<input type="text" class="form-control" placeholder="Search">
+                                                			<span class="input-group-btn">
+                                                        <button class="btn btn-success" type="button">Go!</button>
+                                                      </span>
+                                                		</div>
+                                                		<!-- /input-group -->
+                                                	</div>
+                                                	<!-- /.col-lg-6 -->
+                                                </div>
+                                                <!-- /.row -->
+
+                                                                                    <div class="panel">
+                                            <div class="panel-heading">
+                                                
+                                            </div>
+                                            <div class="panel-body p-20">
+
+                                                <table class="table">
+                                                	
+                                                	<thead>
+                                                		<tr>
+                                                			<th>Project Name</th>
+                                                			<th>Start Date</th>
+                                                			<th>Deadline</th>
+															<th>Billing Type</th>
+															<th>Status</th>
+                                                		</tr>
+                                                	</thead>
+                                                	<tbody>
+                                                		<tr>
+                                                			<th scope="row">###</th>
+                                                			<td>21-4-2019</td>
+                                                			<td>14-4-2022</td>
+                                                			<td>Fixed Rate</td>
+															<td>In Progress</td>
+                                                		</tr>
+                                                		<tr>
+                                                			<th scope="row">###</th>
+                                                			<td>11-4-2020</td>
+                                                			<td>11-11-2023</td>
+                                                			<td>Fixed Rate</td>
+															<td>In Progress</td>
+                                                		</tr>
+														
+                                                	</tbody>
+                                                </table>
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.container-fluid -->
+                        </section>
+                        <!-- /.section -->
+                    </div>
+                    <!-- /.main-page -->
+
+                    
+                    <!-- /.right-sidebar -->
+
+                </div>
+                <!-- /.content-container -->
+            </div>
+            <!-- /.content-wrapper -->
+
+        </div>
+        <!-- /.main-wrapper -->
+
+        <!-- ========== COMMON JS FILES ========== -->
+        <script src="js/jquery/jquery-2.2.4.min.js"></script>
+        <script src="js/jquery-ui/jquery-ui.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="js/pace/pace.min.js"></script>
+        <script src="js/lobipanel/lobipanel.min.js"></script>
+        <script src="js/iscroll/iscroll.js"></script>
+
+        <!-- ========== PAGE JS FILES ========== -->
+        <script src="js/prism/prism.js"></script>
+        <script src="js/waypoint/waypoints.min.js"></script>
+        <script src="js/counterUp/jquery.counterup.min.js"></script>
+        <script src="js/amcharts/amcharts.js"></script>
+        <script src="js/amcharts/serial.js"></script>
+        <script src="js/amcharts/pie.js"></script>
+        <script src="js/amcharts/plugins/export/export.min.js"></script>
+        <link rel="stylesheet" href="js/amcharts/plugins/export/export.css" type="text/css" media="all" />
+        <script src="js/amcharts/themes/light.js"></script>
+        <script src="js/icheck/icheck.min.js"></script>
+
+        <!-- ========== THEME JS ========== -->
+        <script src="js/main.js"></script>
+        <script src="js/bar-chart.js"></script>
+        <script src="js/pie-chart.js"></script>
+        <script src="js/task-list.js"></script>
+        <script>
+            $(function(){
+
+                // Counter for dashboard stats
+                $('.counter').counterUp({
+                    delay: 10,
+                    time: 1000
+                });
+
+            });
+        </script>
+
+        <!-- ========== ADD custom.js FILE BELOW WITH YOUR CHANGES ========== -->
+    </body>
+
+<!-- Mirrored from Worksbot-admin.themesease.com/dashboard-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 14:45:46 GMT -->
+</html>

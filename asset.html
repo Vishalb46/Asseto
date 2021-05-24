@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from Worksbot-admin.themesease.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 14:44:16 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Worksbot Admin - Responsive Web Application Kit</title>
+
+        <!-- ========== COMMON STYLES ========== -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" >
+        <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" >
+        <link rel="stylesheet" href="css/animate-css/animate.min.css" media="screen" >
+        <link rel="stylesheet" href="css/lobipanel/lobipanel.min.css" media="screen" >
+
+        <!-- ========== PAGE STYLES ========== -->
+        <link rel="stylesheet" href="css/prism/prism.css" media="screen" > <!-- USED FOR DEMO HELP - YOU CAN REMOVE IT -->
+        <link rel="stylesheet" href="css/toastr/toastr.min.css" media="screen" >
+        <link rel="stylesheet" href="css/icheck/skins/line/blue.css" >
+        <link rel="stylesheet" href="css/icheck/skins/line/red.css" >
+        <link rel="stylesheet" href="css/icheck/skins/line/green.css" >
+        <link rel="stylesheet" href="css/bootstrap-tour/bootstrap-tour.css" >
+
+        <!-- ========== THEME CSS ========== -->
+        <link rel="stylesheet" href="css/main.css" media="screen" >
+
+        <!-- ========== MODERNIZR ========== -->
+        <script src="js/modernizr/modernizr.min.js"></script>
+    </head>
+    <body class="top-navbar-fixed">
+        <div class="main-wrapper">
+
+            <!-- ========== TOP NAVBAR ========== -->
+            <nav class="navbar top-navbar bg-white box-shadow">
+            	<div class="container-fluid">
+                    <div class="row">
+                        <div class="navbar-header no-padding">
+                			<a class="navbar-brand" href="index.html">
+                			    <img src="images/del" alt="Asseto" class="logo">
+                			</a>
+                            <span class="small-nav-handle hidden-sm hidden-xs"><i class="fa fa-outdent"></i></span>
+                			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                				<span class="sr-only">Toggle navigation</span>
+                				<i class="fa fa-ellipsis-v"></i>
+                			</button>
+                            <button type="button" class="navbar-toggle mobile-nav-toggle" >
+                				<i class="fa fa-bars"></i>
+                			</button>
+                		</div>
+                        <!-- /.navbar-header -->
+
+                		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+                			<ul class="nav navbar-nav" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                <li class="hidden-sm hidden-xs"><a href="#" class="user-info-handle"><i class="fa fa-user"></i></a></li>
+                                <li class="hidden-sm hidden-xs"><a href="#" class="full-screen-handle"><i class="fa fa-arrows-alt"></i></a></li>
+                                <li class="hidden-sm hidden-xs"><a href="#"><i class="fa fa-search"></i></a></li>
+                				<li class="hidden-xs hidden-xs"><a href="assets.html">Asset</a></li>
+								<li class="hidden-xs hidden-xs"><a href="#">Project</a></li>
+								<li class="hidden-xs hidden-xs"><a href="#">Invoices</a></li>
+								<li class="hidden-xs hidden-xs"><a href="#">Contracts</a></li>
+								<li class="hidden-xs hidden-xs"><a href="#">Estimates</a></li>
+								<li class="hidden-xs hidden-xs"><a href="#">Proposals</a></li>
+								<li class="hidden-xs hidden-xs"><a href="#">Support</a></li>
+                			</ul>
+ 
+                                <!-- /.dropdown -->
+                				<li class="dropdown tour-two">
+                					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">John Doe <span class="caret"></span></a>
+                					<ul class="dropdown-menu profile-dropdown">
+                						<li class="profile-menu bg-gray">
+                						    <div class="">
+                						        <img src="http://placehold.it/60/c2c2c2?text=User" alt="John Doe" class="img-circle profile-img">
+                                                <div class="profile-name">
+                                                    <h6>John Doe</h6>
+                                                    <a href="pages-profile.html">View Profile</a>
+                                                </div>
+                                                <div class="clearfix"></div>
+                						    </div>
+                						</li>
+                						<li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+                						<li><a href="#"><i class="fa fa-sliders"></i> Account Details</a></li>
+                						<li role="separator" class="divider"></li>
+                						<li><a href="#" class="color-danger text-center"><i class="fa fa-sign-out"></i>Logout</a></li>
+                					</ul>
+                				</li>
+                                <!-- /.dropdown -->
+                                
+                			</ul>
+                            <!-- /.nav navbar-nav navbar-right -->
+                		</div>
+                		<!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.row -->
+            	</div>
+            	<!-- /.container-fluid -->
+            </nav>
+
+            <!-- ========== WRAPPER FOR BOTH SIDEBARS & MAIN CONTENT ========== -->
+            <div class="content-wrapper">
+                <div class="content-container">
+
+                    <!-- ========== LEFT SIDEBAR ========== -->
+                    <div class="left-sidebar fixed-sidebar bg-black-300 box-shadow tour-three">
+                        <div class="sidebar-content">
+                            <div class="user-info closed">
+                                <img src="http://placehold.it/90/c2c2c2?text=User" alt="John Doe" class="img-circle profile-img">
+                                <h6 class="title">John Doe</h6>
+                                <small class="info">PHP Developer</small>
+                            </div>
+                            <!-- /.user-info -->
+
+                            <div class="sidebar-nav">
+                                <ul class="side-nav color-gray">
+                                    <li class="nav-header">
+                                        <span class="">Main Category</span>
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="#"><i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-right arrow"></i></a>
+                                        <ul class="child-nav">
+                                            <li class="active"><a href="index.html"><i class="fa fa-bolt"></i> <span>Layout 1</span></a></li>
+                                            <li><a href="dashboard-2.html"><i class="fa fa-bookmark"></i> <span>Layout 2</span></a></li><li><a href="dashboard-full-width.html"><i class="fa fa-dashboard"></i> <span>Layout 3</span></a></li>
+                                        </ul>
+                                    </li>
+
+                                    
+                                    
+                                    <li class="has-children">
+                                        <a href="#"><i class="fa fa-lock"></i> <span>Login</span> <i class="fa fa-angle-right arrow"></i></a>
+                                        <ul class="child-nav">
+                                            <li><a href="pages-login.html"><i class="fa fa-lock"></i> <span>Admin 1</span></a></li>
+                                            <li><a href="pages-login-2.html"><i class="fa fa-sign-in"></i> <span>Admin 2</span></a></li>
+                                            <li><a href="pages-login-3.html"><i class="fa fa-sign-out"></i> <span>Option 3</span></a></li>
+                                            <li><a href="pages-login-4.html"><i class="fa fa-lock"></i> <span>Option 4</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="#"><i class="fa fa-sign-out"></i> <span>Register</span> <i class="fa fa-angle-right arrow"></i></a>
+                                        <ul class="child-nav">
+                                            <li><a href="pages-register.html"><i class="fa fa-lock"></i> <span>Sign Up</span></a></li>
+                                            <li><a href="pages-register-2.html"><i class="fa fa-sign-in"></i> <span>Option 2</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="#"><i class="fa fa-lock"></i> <span>Ecommerce</span> <i class="fa fa-angle-right arrow"></i></a>
+                                        <ul class="child-nav">
+                                            <li><a href="ecommerce-dashboard.html"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+                                            <li><a href="ecommerce-orders.html"><i class="fa fa-shopping-cart"></i> <span>Orders</span></a></li>
+                                            <li><a href="ecommerce-order-view.html"><i class="fa fa-sign-out"></i> <span>Order View</span></a></li>
+                                            <li><a href="ecommerce-products.html"><i class="fa fa-lock"></i> <span>Products</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class=""><a href="pages-error-404.html"><i class="fa fa-info"></i> <span>Error 404</span></a></li>
+                                    <li class=""><a href="pages-error-500.html"><i class="fa fa-info-circle"></i> <span>Error 500</span></a></li>
+                                    <li class=""><a href="pages-profile.html"><i class="fa fa-user"></i> <span>Profile</span></a></li>
+                                    <li class=""><a href="pages-pricing.html"><i class="fa fa-user-secret"></i> <span>Pricing</span></a></li>
+                                </ul>
+                                <!-- /.side-nav -->
+                                <div class="purchase-btn hidden-sm hidden-xs">
+                                    <a href="https://themeforest.net/item/Worksbot-admin-responsive-web-application-ui-kit/19796742?license=regular&amp;open_purchase_for_item_id=19796742&amp;purchasable=source&amp;ref=salttechno" target="_blank" class="btn btn-success btn-labeled">Purchase Now<span class="btn-label btn-label-right"><i class="fa fa-check"></i></span></a>
+                                </div>
+                            </div>
+                            <!-- /.sidebar-nav -->
+                        </div>
+                        <!-- /.sidebar-content -->
+                    </div>
+                    <!-- /.left-sidebar -->
+
+                    <div class="main-page">
+                        <div class="container-fluid">
+                            <div class="row page-title-div">
+                                <div class="col-sm-6">
+                                    <h2 class="title">Dashboard</h2>
+                                    <p class="sub-title">One stop solution for perfect admin dashboard!</p>
+                                </div>
+                                <!-- /.col-sm-6 -->
+                                <div class="col-sm-6 right-side">
+                                    <a class="btn bg-black toggle-code-handle tour-four" role="button">Toggle Code!</a>
+                                </div>
+                                <!-- /.col-sm-6 text-right -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row breadcrumb-div">
+                                <div class="col-sm-6">
+                                    <ul class="breadcrumb">
+            							<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+            							<li class="active">Dashboard</li>
+            						</ul>
+                                </div>
+                                <!-- /.col-sm-6 -->
+                                <div class="col-sm-6 text-right hidden-xs">
+                                    <a href="#"><i class="fa fa-comments"></i>Files</a>
+                                    <a href="#" class="pl-20"><i class="fa fa-cog"></i> Settings</a>
+                                </div>
+                                <!-- /.col-sm-6 -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.container-fluid -->
+
+                        <section class="section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                        <a class="dashboard-stat bg-primary" href="#">
+                                            <span class="number counter">0</span>
+                                            <span class="name">Not Started</span>
+                                            <span class="bg-icon"><i class="fa fa-comments"></i></span>
+                                        </a>
+                                        <!-- /.dashboard-stat -->
+
+                                        <div class="src-code">
+                                            <pre class="language-html"><code class="language-html">
+&lt;a class="dashboard-stat bg-primary" href="#"&gt;
+    &lt;span class="number counter"&gt;1,411&lt;/span&gt;
+    &lt;span class="name"&gt;Comments&lt;/span&gt;
+    &lt;span class="bg-icon"&gt;&lt;i class="fa fa-comments"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;!-- /.dashboard-stat --&gt;
+
+&lt;!-- ========== JS ========== --&gt;
+&lt;script&gt;
+    $(function(){
+        $('.counter').counterUp();
+    });
+&lt;/script&gt;
+                                            </code></pre>
+                                        </div>
+                                        <!-- /.src-code -->
+                                    </div>
+                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
+
+                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                        <a class="dashboard-stat bg-danger" href="#">
+                                            <span class="number counter">1</span>
+                                            <span class="name">In Progress</span>
+                                            <span class="bg-icon"><i class="fa fa-ticket"></i></span>
+                                        </a>
+                                        <!-- /.dashboard-stat -->
+
+                                        <div class="src-code">
+                                            <pre class="language-html"><code class="language-html">
+&lt;a class="dashboard-stat bg-danger" href="#"&gt;
+    &lt;span class="number counter"&gt;322&lt;/span&gt;
+    &lt;span class="name"&gt;Total Tickets&lt;/span&gt;
+    &lt;span class="bg-icon"&gt;&lt;i class="fa fa-ticket"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;!-- /.dashboard-stat --&gt;
+
+&lt;!-- ========== JS ========== --&gt;
+&lt;script&gt;
+    $(function(){
+        $('.counter').counterUp();
+    });
+&lt;/script&gt;
+                                            </code></pre>
+                                        </div>
+                                        <!-- /.src-code -->
+                                    </div>
+                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
+
+                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                        <a class="dashboard-stat bg-warning" href="#">
+                                            <span class="number counter">0</span>
+                                            <span class="name">Cancelled</span>
+                                            <span class="bg-icon"><i class="fa fa-bank"></i></span>
+                                        </a>
+                                        <!-- /.dashboard-stat -->
+
+                                        <div class="src-code">
+                                            <pre class="language-html"><code class="language-html">
+&lt;a class="dashboard-stat bg-warning" href="#"&gt;
+    &lt;span class="number counter"&gt;5,551&lt;/span&gt;
+    &lt;span class="name"&gt;Bank Credits&lt;/span&gt;
+    &lt;span class="bg-icon"&gt;&lt;i class="fa fa-bank"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;!-- /.dashboard-stat --&gt;
+                                            </code></pre>
+                                        </div>
+                                        <!-- /.src-code -->
+                                    </div>
+                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
+
+                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                        <a class="dashboard-stat bg-warning" href="#">
+                                            <span class="number counter">0</span>
+                                            <span class="name">On hold</span>
+                                            <span class="bg-icon"><i class="fa fa-bank"></i></span>
+                                        </a>
+                                        <!-- /.dashboard-stat -->
+
+                                        <div class="src-code">
+                                            <pre class="language-html"><code class="language-html">
+&lt;a class="dashboard-stat bg-warning" href="#"&gt;
+    &lt;span class="number counter"&gt;5,551&lt;/span&gt;
+    &lt;span class="name"&gt;Bank Credits&lt;/span&gt;
+    &lt;span class="bg-icon"&gt;&lt;i class="fa fa-bank"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;!-- /.dashboard-stat --&gt;
+
+&lt;!-- ========== JS ========== --&gt;
+&lt;script&gt;
+    $(function(){
+        $('.counter').counterUp();
+    });
+&lt;/script&gt;
+
+&lt;!-- ========== JS ========== --&gt;
+&lt;script&gt;
+    $(function(){
+        $('.counter').counterUp();
+    });
+&lt;/script&gt;
+                                            </code></pre>
+                                        </div>
+                                        <!-- /.src-code -->
+                                    </div>
+                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
+
+                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                        <a class="dashboard-stat bg-success" href="#">
+                                            <span class="number counter">11</span>
+                                            <span class="name">Finished</span>
+                                            <span class="bg-icon"><i class="fa fa-thumbs-o-up"></i></span>
+                                        </a>
+                                        <!-- /.dashboard-stat -->
+
+                                        <div class="src-code">
+                                            <pre class="language-html"><code class="language-html">
+&lt;a class="dashboard-stat bg-success" href="#"&gt;
+    &lt;span class="number counter"&gt;16,710&lt;/span&gt;
+    &lt;span class="name"&gt;Thumbs Up&lt;/span&gt;
+    &lt;span class="bg-icon"&gt;&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;!-- /.dashboard-stat --&gt;
+
+&lt;!-- ========== JS ========== --&gt;
+&lt;script&gt;
+    $(function(){
+        $('.counter').counterUp();
+    });
+&lt;/script&gt;
+                                            </code></pre>
+                                        </div>
+                                        <!-- /.src-code -->
+                                    </div>
+                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
+
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.container-fluid -->
+                        </section>
+                        <!-- /.section -->
+                                    <div class="">
+                                        <div class="panel">
+                                            <div class="panel-heading">
+                                                <div class="panel-title">
+                                                    <h5></h5>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                        <section class="section pt">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="">
+                                        <div class="" data-panel-control>
+                                            <div class="panel-heading">
+                                                <div class="panel-title">
+                                                    <h5>Quick Invoices<small>Info</small></h5>
+                                                </div>
+                                            </div>
+                                        <div class="col-md-6">
+                                            <div class="panel">
+                                                <div class="panel-heading">
+                                                    <div class="panel-title">
+                                                        <h5></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="progress">
+                                                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                        <span class="sr-only">Paid </span>
+                                                        Paid
+                                                      </div>
+                                                    </div>
+                                                    <div class="progress">
+                                                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                                                        <span class="sr-only">30% Complete (info)</span>
+                                                        Unpaid
+                                                      </div>
+                                                    </div>
+                                                    <div class="progress">
+                                                      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                                        <span class="sr-only">60% Complete (warning)</span>
+                                                        Partially Paid
+                                                      </div>
+                                                    </div>
+                                                    <div class="progress">
+                                                      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                        <span class="sr-only">80% Complete (danger)</span>
+                                                        Overdue
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.panel -->
+                                        </div>
+                                        <!-- /.col-md-6 -->
+                                    </div>
+                                    <!-- /.col-md-12 -->
+                                                <form action="#">
+                                                    <div class="form-group">
+                                                        <label for="js-states-mul"></label>
+                                                        <select class="js-states-hide form-control" id="js-states-mul">
+                                                          <optgroup label="2019">
+                                                          <optgroup label="">
+                                                            <option value="AZ">2019</option>
+                                                            <option value="CO">2018</option>
+                                                            <option value="ID">2017</option>
+                                                            <option value="MT">2016</option>
+                                                            <option value="NE">2015</option>
+                                                            <option value="NM">2014</option>
+                                                            <option value="ND">2013</option>
+                                                            <option value="UT">2012</option>
+                                                            <option value="WY">2011</option>
+                                                          </optgroup>
+                                                        </select>
+                                                    </div>
+                                                </form>										
+                                            <div class="panel-heading">
+                                                <div class="panel-title">
+                                                    <h5><small></small></h5>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div id="production-chart" class="op-chart"></div>
+
+                                                <div class="src-code">
+                                                    <pre class="language-html"><code class="language-html">
+&lt;div id="production-chart" class="op-chart"&gt;&lt;/div&gt;
+
+&lt;!-- ========== JS ========== --&gt;
+&lt;script src="js/production-chart.js"&gt;&lt;/script&gt;
+                                                    </code></pre>
+                                                </div>
+                                                <!-- /.src-code -->
+                                            </div>
+                                        </div>
+                                        <!-- /.panel -->
+                                    </div>
+                                    <!-- /.col-md-6 -->
+                        <section class="section">
+                            <div class="container-fluid">
+
+                                <div class="row">
+
+                                    <div class="col-md col-md-offset">
+                                        <div class="panel">
+                                            <div class="panel-heading">
+                                                <div class="panel-title">
+                                                    <h5>Assets</h5>
+                                                </div>
+                                            </div>
+											                               
+                                    <div class="col-md-6">
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <p><code class="language-html"></code> <code class="language-html"></code></p>
+                                                <div class="dropdown">
+                                                	<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                		2020
+                                                		<span class="caret"></span>
+                                                	</button>
+                                                	<ul class="dropdown-menu" aria-labelledby="menu1">
+                                                		<li><a href="#">2021</a></li>
+                                                		<li><a href="#">2020</a></li>
+                                                		<li><a href="#">2019</a></li>
+                                                	</ul>
+                                                </div>
+                                                <!-- /.dropdown -->
+                                                <div class="col-md-12 mt-15 src-code">
+                                                    <pre class="language-html"><code class="language-html">
+&lt;div class="dropdown"&gt;
+    &lt;button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;
+        Dropdown
+        &lt;span class="caret"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class="dropdown-menu" aria-labelledby="menu1"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- /.dropdown --&gt;
+                                                    </code></pre>
+                                                </div>
+                                                <!-- /.col-md-12 -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.col-md-6 -->
+                                            <div class="panel-body">
+
+                                                <table class="table table-bordered">
+                                                	<caption></caption>
+                                                	<tbody class="text-center line-height-35">
+                                                		<tr>
+                                                			<td class="w-10 text-center line-height-35"><i class="fa fa-check color-success font-size-18" aria-hidden="true"></i></td>
+                                                			<td class="w-10"><img src="images/letter/a.png" alt="" class="border-radius-50 img-size-35"></td>
+                                                			<td class="w-20 line-height-35">Alepy Macintyre</td>
+                                                            <td class="line-height-35 text-left">Account for static form controls in form group</td>
+                                                            <td class="w-10 line-height-35">active</td>
+                                                            <td class="w-10 line-height-35 table-dropdown">
+                                                                <div class="dropdown">
+                                                                	<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                		<i class="fa fa-bars"></i>
+                                                                		<span class="caret"></span>
+                                                                	</button>
+                                                                	<ul class="dropdown-menu">
+                                                                		<li><a href="#"><i class="fa fa-undo"></i> Quick reply</a></li>
+                                                                		<li><a href="#"><i class="fa fa-history"></i> Full history</a></li>
+                                                                		<li><a href="#"><i class="fa fa-check color-success"></i> Resolve issue</a></li>
+                                                                        <li><a href="#"><i class="fa fa-close color-danger"></i> Close issue</a></li>
+                                                                	</ul>
+                                                                </div>
+                                                            </td>
+                                                		</tr>
+                                                		<tr>
+                                                			<td class="text-center line-height-35"><i class="fa fa-check color-success font-size-18" aria-hidden="true"></i></td>
+                                                			<td><img src="images/letter/profile-image-1.jpg" alt="" class="border-radius-50 img-size-35"></td>
+                                                			<td class="line-height-35">Alepy Macintyre</td>
+                                                            <td class="line-height-35 text-left">It is a long established fact that a reader distracted.</td>
+                                                            <td class="line-height-35">active</td>
+                                                            <td class="w-10 line-height-35 table-dropdown">
+                                                                <div class="dropdown">
+                                                                	<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                		<i class="fa fa-bars"></i>
+                                                                		<span class="caret"></span>
+                                                                	</button>
+                                                                	<ul class="dropdown-menu">
+                                                                		<li><a href="#"><i class="fa fa-undo"></i> Quick reply</a></li>
+                                                                		<li><a href="#"><i class="fa fa-history"></i> Full history</a></li>
+                                                                		<li><a href="#"><i class="fa fa-check color-success"></i> Resolve issue</a></li>
+                                                                        <li><a href="#"><i class="fa fa-close color-danger"></i> Close issue</a></li>
+                                                                	</ul>
+                                                                </div>
+                                                            </td>
+                                                		</tr>
+                                                        <tr>
+                                                			<td class="text-center line-height-35"><i class="fa fa-check color-success font-size-18" aria-hidden="true"></i></td>
+                                                			<td><img src="images/letter/profile-image-3.jpg" alt="" class="border-radius-50 img-size-35"></td>
+                                                			<td class="line-height-35">Alepy Macintyre</td>
+                                                            <td class="line-height-35 text-left">The standard chunk of Lorem or non-characteristic.</td>
+                                                            <td class="line-height-35">active</td>
+                                                            <td class="w-10 line-height-35 table-dropdown">
+                                                                <div class="dropdown">
+                                                                	<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                		<i class="fa fa-bars"></i>
+                                                                		<span class="caret"></span>
+                                                                	</button>
+                                                                	<ul class="dropdown-menu">
+                                                                		<li><a href="#"><i class="fa fa-undo"></i> Quick reply</a></li>
+                                                                		<li><a href="#"><i class="fa fa-history"></i> Full history</a></li>
+                                                                		<li><a href="#"><i class="fa fa-check color-success"></i> Resolve issue</a></li>
+                                                                        <li><a href="#"><i class="fa fa-close color-danger"></i> Close issue</a></li>
+                                                                	</ul>
+                                                                </div>
+                                                            </td>
+                                                		</tr>
+                                                        <tr>
+                                                			<td class="text-center line-height-35"><i class="fa fa-check color-success font-size-18" aria-hidden="true"></i></td>
+                                                			<td><img src="images/letter/b.png" alt="" class="border-radius-50 img-size-35"></td>
+                                                			<td class="line-height-35">Blepy Macintyre</td>
+                                                            <td class="line-height-35 text-left">Ipsum used since the 1500s or non-characteristic.</td>
+                                                            <td class="line-height-35">active</td>
+                                                            <td class="w-10 line-height-35 table-dropdown">
+                                                                <div class="dropdown">
+                                                                	<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                		<i class="fa fa-bars"></i>
+                                                                		<span class="caret"></span>
+                                                                	</button>
+                                                                	<ul class="dropdown-menu">
+                                                                		<li><a href="#"><i class="fa fa-undo"></i> Quick reply</a></li>
+                                                                		<li><a href="#"><i class="fa fa-history"></i> Full history</a></li>
+                                                                		<li><a href="#"><i class="fa fa-check color-success"></i> Resolve issue</a></li>
+                                                                        <li><a href="#"><i class="fa fa-close color-danger"></i> Close issue</a></li>
+                                                                	</ul>
+                                                                </div>
+                                                            </td>
+                                                		</tr>
+                                                        <tr>
+                                                			<td class="text-center line-height-35"><i class="fa fa-check color-success font-size-18" aria-hidden="true"></i></td>
+                                                			<td><img src="images/letter/c.png" alt="" class="border-radius-50 img-size-35"></td>
+                                                			<td class="line-height-35">Clepy Macintyre</td>
+                                                            <td class="line-height-35 text-left">Account for static form controls in form group</td>
+                                                            <td class="line-height-35">active</td>
+                                                            <td class="w-10 line-height-35 table-dropdown">
+                                                                <div class="dropdown">
+                                                                	<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                		<i class="fa fa-bars"></i>
+                                                                		<span class="caret"></span>
+                                                                	</button>
+                                                                	<ul class="dropdown-menu">
+                                                                		<li><a href="#"><i class="fa fa-undo"></i> Quick reply</a></li>
+                                                                		<li><a href="#"><i class="fa fa-history"></i> Full history</a></li>
+                                                                		<li><a href="#"><i class="fa fa-check color-success"></i> Resolve issue</a></li>
+                                                                        <li><a href="#"><i class="fa fa-close color-danger"></i> Close issue</a></li>
+                                                                	</ul>
+                                                                </div>
+                                                            </td>
+                                                		</tr>
+                                                	</tbody>
+                                                </table>
+
+                                                <div class="col-md-12 mt-15 src-code">
+                                                    <pre class="language-html">
+                                                        <code class="language-html">
+&lt;table class="table table-bordered"&gt;
+	&lt;caption&gt;Optional table caption.&lt;/caption&gt;
+	&lt;tbody class="text-center line-height-35"&gt;
+		&lt;tr&gt;
+			&lt;td class="w-10 text-center line-height-35"&gt;&lt;i class="fa fa-check color-success font-size-18" aria-hidden="true"&gt;&lt;/i&gt;&lt;/td&gt;
+			&lt;td class="w-10"&gt;&lt;img src="images/letter/a.png" alt="" class="border-radius-50 img-size-35"&gt;&lt;/td&gt;
+			&lt;td class="w-20 line-height-35"&gt;Alepy Macintyre&lt;/td&gt;
+            &lt;td class="line-height-35 text-left"&gt;Account for static form controls in form group&lt;/td&gt;
+            &lt;td class="w-10 line-height-35"&gt;active&lt;/td&gt;
+            &lt;td class="w-10 line-height-35 table-dropdown"&gt;
+                &lt;div class="dropdown"&gt;
+                	&lt;button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+                		&lt;i class="fa fa-bars"&gt;&lt;/i&gt;
+                		&lt;span class="caret"&gt;&lt;/span&gt;
+                	&lt;/button&gt;
+                	&lt;ul class="dropdown-menu"&gt;
+                		&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-undo"&gt;&lt;/i&gt; Quick reply&lt;/a&gt;&lt;/li&gt;
+                		&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-history"&gt;&lt;/i&gt; Full history&lt;/a&gt;&lt;/li&gt;
+                		&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-check color-success"&gt;&lt;/i&gt; Resolve issue&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-close color-danger"&gt;&lt;/i&gt; Close issue&lt;/a&gt;&lt;/li&gt;
+                	&lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+		&lt;/tr&gt;
+        ...
+	&lt;/tbody&gt;
+&lt;/table&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                                <!-- /.col-md-12 -->
+                                            </div>
+                                        </div>
+                                        <!-- /.panel -->
+                                    </div>
+                                    <!-- /.col-md-6 -->
+
+        <!-- ========== COMMON JS FILES ========== -->
+        <script src="js/jquery/jquery-2.2.4.min.js"></script>
+        <script src="js/jquery-ui/jquery-ui.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="js/pace/pace.min.js"></script>
+        <script src="js/lobipanel/lobipanel.min.js"></script>
+        <script src="js/iscroll/iscroll.js"></script>
+
+        <!-- ========== PAGE JS FILES ========== -->
+        <script src="js/prism/prism.js"></script>
+        <script src="js/waypoint/waypoints.min.js"></script>
+        <script src="js/counterUp/jquery.counterup.min.js"></script>
+        <script src="js/amcharts/amcharts.js"></script>
+        <script src="js/amcharts/serial.js"></script>
+        <script src="js/amcharts/plugins/export/export.min.js"></script>
+        <link rel="stylesheet" href="js/amcharts/plugins/export/export.css" type="text/css" media="all" />
+        <script src="js/amcharts/themes/light.js"></script>
+        <script src="js/toastr/toastr.min.js"></script>
+        <script src="js/icheck/icheck.min.js"></script>
+        <script src="js/bootstrap-tour/bootstrap-tour.js"></script>
+
+        <!-- ========== THEME JS ========== -->
+        <script src="js/main.js"></script>
+        <script src="js/production-chart.js"></script>
+        <script src="js/traffic-chart.js"></script>
+        <script src="js/task-list.js"></script>
+        <script>
+            $(function(){
+
+                // Counter for dashboard stats
+                $('.counter').counterUp({
+                    delay: 10,
+                    time: 1000
+                });
+
+                // Welcome notification
+                toastr.Worksbot = {
+                    "closeButton": true,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "3500",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                toastr["success"]("One stop solution to your website admin panel!", "Welcome to Worksbot!");
+
+            });
+        </script>
+
+        <!-- ========== ADD custom.js FILE BELOW WITH YOUR CHANGES ========== -->
+    </body>
+
+<!-- Mirrored from Worksbot-admin.themesease.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 14:45:17 GMT -->
+</html>
